@@ -1,0 +1,5 @@
+FROM rikorose/gcc-cmake
+
+RUN bzr branch lp:mydumper
+WORKDIR mydumper
+RUN cmake . && make
