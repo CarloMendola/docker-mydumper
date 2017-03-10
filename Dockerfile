@@ -1,3 +1,5 @@
 FROM mysqlboy/docker-mydumper:build
 
-RUN echo 'not complete'
+ADD $PWD/target/my* /usr/bin/
+
+CMD ["bash"]
